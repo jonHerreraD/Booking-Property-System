@@ -4,7 +4,7 @@ import LogIn from './components/logIn/logIn';
 const App = () => {
   return (
     <>
-      <Header></Header>
+      {/*<Header></Header>*/}
       <LogIn></LogIn>
     </>
   )
