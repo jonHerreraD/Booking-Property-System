@@ -38,7 +38,7 @@ export default function LogIn() {
                     </a>
 
                     {/* Login button */}
-                    <button className="w-full bg-gradient-to-r from-purple-600 to-purple-500 text-white py-3 px-4 rounded-2xl shadow-lg hover:shadow-xl hover:from-purple-700 hover:to-purple-600 active:transform active:scale-98 transition-all duration-200 cursor-pointer">
+                    <button className="w-full bg-gradient-to-r from-purple-800 to-purple-300 text-white py-3 px-4 rounded-2xl shadow-lg hover:shadow-xl hover:from-purple-900 hover:to-purple-400 active:transform active:scale-98 transition-all duration-200 cursor-pointer">
                         <span className="absolute w-0 h-0 transition-all duration-300 ease-out bg-white rounded-2xl group-hover:w-full group-hover:h-full opacity-10"></span>
                         <span className="relative">LogIn</span>
                     </button>
