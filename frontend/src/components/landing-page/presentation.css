@@ -1,0 +1,78 @@
+.gradient-text {
+          background: linear-gradient(45deg, #8b5cf6, #ec4899, #06b6d4, #8b5cf6);
+          background-size: 200% 200%;
+          -webkit-background-clip: text;
+          background-clip: text;
+        }
+
+        .img {
+          border-radius: 20px;
+          box-shadow: 0 20px 60px rgba(0,0,0,0.4);
+          cursor: pointer;
+          transition: filter 0.3s ease;
+        }
+
+        /* Responsive image sizing */
+        @media (max-width: 768px) {
+          .img {
+            max-height: 35vh !important;
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+          }
+        }
+
+        @media (min-width: 769px) and (max-width: 1024px) {
+          .img {
+            max-height: 45vh !important;
+            border-radius: 16px;
+          }
+        }
+
+        @media (min-width: 1025px) {
+          .img {
+            max-height: 55vh !important;
+          }
+        }
+
+        .img:nth-child(odd) {
+          filter: hue-rotate(45deg) saturate(1.2);
+        }
+
+        .img:nth-child(even) {
+          filter: hue-rotate(-45deg) saturate(1.1) brightness(1.1);
+        }
+
+        .floating-element {
+          border-radius: 50%;
+          background: linear-gradient(45deg, rgba(139, 92, 246, 0.2), rgba(255, 255, 255, 0.2));
+          backdrop-filter: blur(10px);
+        }
+
+        .glow-text {
+          text-shadow: 0 0 10px rgba(139, 92, 246, 0.5);
+        }
+
+        #presentation {
+          background: linear-gradient(135deg, 
+            rgba(255, 255, 255, 1) 0%, 
+            rgba(139, 92, 246, 0.8) 25%,
+            rgba(255, 255, 255, 1) 50%,
+            rgba(147, 51, 234, 0.8) 75%,
+            rgba(255, 255, 255, 1) 100%
+          );
+          background-size: 400% 400%;
+          animation: gradientShift 15s ease infinite;
+        }
+
+        @keyframes gradientShift {
+          0% { background-position: 0% 50%; }
+          50% { background-position: 100% 50%; }
+          100% { background-position: 0% 50%; }
+        }
+
+        /* Responsive floating elements */
+        @media (max-width: 768px) {
+          .floating-element {
+            transform: scale(0.6);
+          }
+        }
