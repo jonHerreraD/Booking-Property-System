@@ -5,13 +5,13 @@ import Presentation from "./components/landing-page/Presentation";
 import LandingOptions from './components/landing-page/LandingOptions';
 import GuestsSection from './components/landing-page/DiscoverSection.tsx';
 import Footer from './components/utils/Footer.tsx';
+import Home from './components/home/Home.tsx';
 const App = () => {
   return (
     <>
-      {/*<Header></Header>*/}
+      <Header></Header>
       {/*<LogIn></LogIn>*/}
-      <LandingOptions></LandingOptions>
-      <Presentation></Presentation>
+      <Home></Home>
      <Footer></Footer>
     </>
   )

@@ -4,6 +4,15 @@ interface NavLink {
     link: string;
 }
 
+interface Property{
+  id: number;
+  image: string;
+  title: string;
+  price: string;
+  beds: number;
+  baths: number;
+}
+
 const navLinks: NavLink[] = [
     { name: "Where", description: "Search Destinations", link: "#work" },
     { name: "Check In", description: "Add Dates", link: "#experience" },
@@ -91,6 +100,7 @@ const footerSections: FooterSection[] = [
 
 
 export default navLinks; // default export
+export type {Property};
 export { languages };    // named export
 export {currencies};
 export {menu};
